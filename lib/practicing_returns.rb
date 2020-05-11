@@ -5,7 +5,7 @@ def hello(array)
   collection = []
   while i < array.length
     binding.pry
-    yield(array[i])
+    collection.push(yield(array[i]))
     i += 1
   end
   collection
